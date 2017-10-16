@@ -22,5 +22,11 @@
 </head>
 
 <body>
+  <script>
+  function changeDOM() {
+    document.getElementById("test").innerHTML = "Paragraph changed!";
+  }
+  </script>
+  <p id="test" onclick="changeDOM()">Click to change HTML content.</p>
 </body>
 </html>

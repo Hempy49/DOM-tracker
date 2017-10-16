@@ -1,0 +1,28 @@
+{
+  "name": "dom-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hempy49/DOM-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hempy49/DOM-tracker/issues"
+  },
+  "homepage": "https://github.com/Hempy49/DOM-tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "diff-match-patch": "^1.0.0",
+    "express": "^4.16.2"
+  }
+}
