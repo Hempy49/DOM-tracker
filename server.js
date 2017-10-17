@@ -1,21 +1,14 @@
-var express    = require('express');
-var app        = express();
-var bodyParser = require('body-parser');
+var express = require('express');
+var app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.static(__dirname));
 
-var port = process.env.PORT || 3000;
-
-var router = express.Router();
-
-router.get('/', function (req, res) {
-  res.send('Hello World!');
-});
+app.get('/*', function (req, res) {
+   res.sendFile( __dirname + "/index.html" );
+})
 
 var port = 8000;
 
-app.use('/', router);
-
-app.listen(port);
-console.log('server started on: ' + port);
+app.listen(port, function () {
+  console.log('server listening on port' + port);
+});
