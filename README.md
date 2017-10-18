@@ -10,3 +10,4 @@ google diff-match-patch library (https://code.google.com/p/google-diff-match-pat
 - ``$ git clone`` the repo
 - ``$ npm install``
 - ``$ open SpecRunner.html`` to run the tests
+- ``$ npm start`` to run the app
